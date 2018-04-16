@@ -34,13 +34,14 @@ public class Steps {
 	public void fingJava(){
 		WebElement someElement = driver.findElement(By.name("q"));
 		someElement.sendKeys("Java");
-	    someElement.submit();
+	        someElement.submit();
+		logger.info("Searching was started")
 	}
 	
 	public void openLink (){
 		WebElement link = driver.findElement(By.xpath("//*[@id='rso']/div[1]/div/div[1]/div/div/h3/a"));
 		link.click();
-		
+		logger.info("First link was opened")
 		
 		
 	}
@@ -48,6 +49,7 @@ public class Steps {
 		
 		WebElement text = driver.findElement(By.xpath("/html/body"));
 		return text.getText();
+		logger.info("Text informatoin from page was received")
 		
 	}
 
