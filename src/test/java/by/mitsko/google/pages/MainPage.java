@@ -11,8 +11,7 @@ public class MainPage extends AbstractPage {
 	private final String BASE_URL = "http://google.by";
 
 	
-	public MainPage(WebDriver driver)
-	{
+	public MainPage(WebDriver driver){
 		super(driver);
 		PageFactory.initElements(this.driver, this);
 	}
